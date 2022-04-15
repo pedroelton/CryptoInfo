@@ -17,7 +17,6 @@ function App() {
 		);
 	}, []);
 
-	//TODO: Implementar Hovers
 	//TODO: Implementar Framer Motion Effects
 	//TODO: Implementar Pagination
 	//TODO: Implementar Search
