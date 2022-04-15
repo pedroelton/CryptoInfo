@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Axios from "axios";
 import Coin from "./components/Coin";
 import "./index.css";
-import Header from "./components/Header";
 
 function App() {
 	const [listOfCoins, setListOfCoins] = useState([]);
@@ -27,7 +26,6 @@ function App() {
 
 	return (
 		<div className="bg-slate-900 text-slate-400 w-full h-full">
-			<Header />
 			<div className="flex-1 flex-wrap  lg:px-40 lg:py-10 p-4">
 				{/* //?Using Map to loop and display dinamicaly all data of the API */}
 				{listOfCoins.map((coin) => {
