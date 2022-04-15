@@ -1,10 +1,10 @@
 import React from "react";
 import logo2 from "../asset/logo2.webp";
 
-function Header() {
+function Header({ onChange }) {
 	return (
 		<div className="bg-slate-800 h-auto flex lg:justify-between justify-center lg:flex-row flex-col items-center lg:p-10 p-4">
-			<div className=" flex flex-col gap-3 items-start">
+			<div className=" flex flex-col gap-3 lg:items-start items-center w-full">
 				<a href="https://thecryptoinfo.vercel.app/">
 					<img
 						src={logo2}
@@ -21,10 +21,13 @@ function Header() {
 					Accurate cryptocurrency information
 				</p>
 			</div>
-			<div className="text-center">
-				<a href="https://pedroelton.vercel.app">
-					<h3 className="text-lg text-slate-400">More projects</h3>
-				</a>
+			<div className="flex items-center lg:justify-end justify-center w-full">
+				<input
+					type="text"
+					className="flex p-4 rounded-xl bg-slate-200 text-slate-800 text-xl md:w-[400px] w-full my-4"
+					placeholder="ex. Bitcoin..."
+					onChange={onChange}
+				/>
 			</div>
 		</div>
 	);
