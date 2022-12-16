@@ -12,7 +12,7 @@ function Coin({
 	websiteUrl,
 }) {
 	return (
-		<div className="w-auto p-4 m-4 border-[1px] border-slate-700 rounded-lg bg-slate-800 flex justify-between lg:flex-row flex-col shadow-lg hover:scale-95 transition-all duration-300">
+		<div className="w-full p-4 my-4 border-[1px] border-slate-700 rounded-lg bg-slate-800 flex justify-between lg:flex-row flex-col shadow-lg hover:scale-95 transition-all duration-300">
 			<div className="flex text-2xl items-start flex-col justify-center mb-5 lg:mb-0">
 				<div className="flex justify-center lg:items-start items-center gap-4 w-full lg:w-[440px] lg:flex-row flex-col">
 					<div className="h-full flex items-center">
